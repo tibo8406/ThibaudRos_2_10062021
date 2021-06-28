@@ -9,3 +9,8 @@ html
 {
     font-family: 'raleway', Helvetica, Arial, sans-serif;
 }
+#bloc_page
+{
+    max-width: 1440px;
+    margin: auto;
+}
