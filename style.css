@@ -14,3 +14,56 @@ html
     max-width: 1440px;
     margin: auto;
 }
+header ul
+{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    padding-right: 30px;
+    margin-left: auto;
+}
+header ul li
+{
+    margin-left: 5%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+header ul li a:hover 
+{
+    border-top: 2px solid #0065fc;
+    color: #0065fc;
+    padding-top: 40px;
+}
+.header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+a 
+{
+    text-decoration: none;
+    color: black;
+}
+#sinscrire a
+{
+    color: #0065fc;
+    font-weight: bold;
+}
+#sinscrire a:hover 
+{
+        border-top: 2px solid #0065fc;
+        padding-top: 40px;
+}
+#sinscrire
+{
+    margin-left: 30px;
+    margin-right: 0%;
+}
+.headernav
+{
+    display: flex;
+    margin-right: 5%;
+}
