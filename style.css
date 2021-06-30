@@ -69,6 +69,8 @@ a
     border: 2px black solid;
     max-width: 100%;
     margin-top: 1.5rem;
+    box-sizing: border-box;
+    margin-bottom: 1.5rem;
 }
 h1
 {
@@ -113,6 +115,7 @@ h1
     border-radius: 0 1rem 1rem 0;
     padding-left: 1rem;
     padding-right: 1rem;
+    cursor: pointer;
 }
 .recherchetitre
 {
@@ -122,4 +125,124 @@ h1
 .recherchesoustitre
 {
     margin-top: 0;
+}
+.filtres
+{
+    display: flex;
+    border: 2px black solid;
+    margin-top: 2rem;
+    padding-left: 0.5rem;
+}
+h2
+{
+    font-size: 1rem;
+}
+.iconfiltres
+{
+    position: relative;
+    background-color: #deebff;
+    border-radius: 100%;
+    min-height: 3.125rem;
+    min-width: 3.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0065fc;
+    margin-left: 2rem;
+}
+.textfiltres
+{
+    padding-left: 2.5rem;
+    padding-right: 1.5rem;
+    font-weight: bold;
+    display: table-cell;
+    vertical-align: middle;
+}
+.bulletextfiltres
+{
+    border: 0.125rem #d9d9d9 solid;
+    border-left: none;
+    margin-left: -1.5rem;
+    border-radius: 0 2rem 2rem 0;
+    box-sizing: border-box;
+    display: table;
+}
+.bulletextfiltres:hover
+{
+    background-color: #f2f7ff;
+    cursor: pointer;
+}
+.textfiltres:hover
+{
+    cursor: pointer;
+}
+.iconinforesultat
+{   
+    display: flex;
+    position: relative;
+    font-size: 0.75rem;
+    border-radius: 100%;
+    height: 1.25rem;
+    width: 1.25rem;
+    align-items: center;
+    justify-content: center;
+    color: #0065fc;
+    border: 0.125rem #d9d9d9 solid;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+.estimationresultat
+{
+    display: flex;
+    border: 2px black solid;
+    max-width: 100%;
+    margin-top: 1.5rem;
+    min-height: 1.5rem;
+}
+.textinforesultat
+{
+    border: 2px black solid;
+    font-size: 1rem;
+    display: table;
+}
+.hebergements
+{
+    display: flex;
+    justify-content: space-between;
+}
+.hebergementsville
+{
+    
+    min-width: 67%;
+    border-radius: 1rem 1rem 1rem 1rem;
+    background-color: #f2f2f2;
+}
+.hebergementspopulaires
+{
+    display: flex;
+    min-width: 30%;
+    border-radius: 1rem 1rem 1rem 1rem;
+    background-color: #f2f2f2;
+}
+.titreheaderhebergements
+{
+    display: flex;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    border: 2px black solid;
+}
+.iconpopulaires
+{
+    font-size: 1.125rem;
+    border: 2px black solid;
+    margin-right: 2.5rem;
+
+}
+.headerhebergementspopulaires
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px black solid;
+    width: 100%;
 }
