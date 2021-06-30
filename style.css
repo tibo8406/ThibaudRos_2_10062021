@@ -25,7 +25,6 @@ header ul
 }
 header ul li
 {
-    margin-left: 5%;
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -59,11 +58,68 @@ a
 }
 #sinscrire
 {
-    margin-left: 30px;
     margin-right: 0%;
 }
 .headernav
 {
     display: flex;
-    margin-right: 5%;
+}
+.recherche
+{
+    border: 2px black solid;
+    max-width: 100%;
+    margin-top: 1.5rem;
+}
+h1
+{
+    font-size: 1.45rem;
+    font-weight: bold;
+}
+.mapicon
+{
+    background-color: #F2F2F2;
+    padding: 1rem 1.25rem;
+    border-radius: 1rem 0 0 1rem;
+    text-align: center;
+}
+.champrecherche
+{
+    border-left: none;
+    border-right: none;
+    font-weight: bold;
+    color: black;
+    border-top: #F2F2F2 1px solid;
+    border-bottom: #F2F2F2 1px solid;
+    font-size: 1rem;
+    font-family: 'raleway', Helvetica, Arial, sans-serif;
+    padding-left: 1.5rem;
+    width: 16rem;
+}
+.formrecherche
+{
+    display: inline-flex;
+    max-width: 100%;
+    overflow: auto;
+    margin-top: 0.5rem;
+}
+.buttonrecherche
+{
+    background-color: #0065fc;
+    color: white;
+    font-family: 'raleway', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0 1rem 1rem 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.recherchetitre
+{
+    margin-bottom: 0.5rem;
+
+}
+.recherchesoustitre
+{
+    margin-top: 0;
 }
