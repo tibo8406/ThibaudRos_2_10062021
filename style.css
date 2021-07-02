@@ -40,6 +40,8 @@ header ul li a:hover
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-left: 3.125rem;
+    margin-right: 3.125rem;
 }
 a 
 {
@@ -66,11 +68,12 @@ a
 }
 .recherche
 {
-    border: 2px black solid;
     max-width: 100%;
     margin-top: 1.5rem;
     box-sizing: border-box;
     margin-bottom: 1.5rem;
+    margin-right: 3.125rem;
+    margin-left: 3.125rem;
 }
 h1
 {
@@ -129,7 +132,6 @@ h1
 .filtres
 {
     display: flex;
-    border: 2px black solid;
     margin-top: 2rem;
     padding-left: 0.5rem;
 }
@@ -194,55 +196,85 @@ h2
 .estimationresultat
 {
     display: flex;
-    border: 2px black solid;
     max-width: 100%;
     margin-top: 1.5rem;
     min-height: 1.5rem;
 }
 .textinforesultat
 {
-    border: 2px black solid;
     font-size: 1rem;
     display: table;
 }
 .hebergements
 {
     display: flex;
+    margin-right: 3.125rem;
+    margin-left: 3.125rem;
     justify-content: space-between;
 }
 .hebergementsville
 {
-    
-    min-width: 67%;
     border-radius: 1rem 1rem 1rem 1rem;
     background-color: #f2f2f2;
+    width: 55rem;
 }
 .hebergementspopulaires
 {
-    display: flex;
-    min-width: 30%;
+    width: 26.25rem;
     border-radius: 1rem 1rem 1rem 1rem;
     background-color: #f2f2f2;
 }
 .titreheaderhebergements
 {
     display: flex;
+    margin-top: 2.5rem;
     margin-left: 2.5rem;
     margin-right: 2.5rem;
-    border: 2px black solid;
+    margin-bottom: 1.25rem;
+    max-width: 21.438rem;
+}
+.titreheaderhebergementspopulaires
+{
+    align-items:center;
+    display: flex;
+    margin-left: 2.313rem;
+    margin-right: 2.5rem;
+    margin-top: 2.5rem;
+    justify-content: space-between;
+    max-height: 1.5rem;
+    margin-bottom: 1.563rem;
 }
 .iconpopulaires
 {
     font-size: 1.125rem;
-    border: 2px black solid;
-    margin-right: 2.5rem;
-
+    max-height: 1.125rem;
 }
-.headerhebergementspopulaires
+.tuileshebergements
 {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    border: 2px black solid;
-    width: 100%;
+}
+.tuilespopulaires
+{
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
+.infohebergementville
+{
+    height: 12.5rem;
+    width: 15.375rem;
+    background-color: white;
+    border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+    margin-bottom: 1.875rem;
+}
+.infohebergementpopulaire
+{
+    height: 9rem;
+    width: 21.375rem;
+    background-color: white;
+    border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+    margin-bottom: 2.063rem;
 }
