@@ -140,9 +140,11 @@ h3
 }
 .filtres
 {
+    height: 3.125rem;
     display: flex;
     margin-top: 2rem;
     padding-left: 0.5rem;
+    align-items: center;
 }
 
 .iconfiltres
@@ -150,7 +152,7 @@ h3
     position: relative;
     background-color: #deebff;
     border-radius: 100%;
-    min-height: 3.125rem;
+    height: 3.125rem;
     min-width: 3.125rem;
     display: flex;
     align-items: center;
@@ -174,6 +176,7 @@ h3
     border-radius: 0 2rem 2rem 0;
     box-sizing: border-box;
     display: table;
+    height: 3.125rem;
 }
 .bulletextfiltres:hover
 {
@@ -198,6 +201,11 @@ h3
     border: 0.125rem #d9d9d9 solid;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+}
+.titrefiltres
+{
+    font-size: 1rem;
+    font-weight: bold;
 }
 .estimationresultat
 {
@@ -265,8 +273,11 @@ h3
 }
 .tuilespopulaires
 {
+    
     margin-left: 2.5rem;
     margin-right: 2.5rem;
+    flex-wrap: wrap;
+    display: flex;
 }
 .infohebergementville
 {
@@ -284,6 +295,7 @@ h3
 }
 .infohebergementpopulaire
 {
+    display:inline-flex;
     height: 9rem;
     width: 21.375rem;
     background-color: white;
@@ -302,7 +314,7 @@ h3
 }
 .imghebville img
 {
-    border-radius: 1rem 1rem 0rem 0rem;
+    border-radius: 1.25rem 1.25rem 0rem 0rem;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -325,4 +337,52 @@ h3
 .stargrey
 {
     color: #d9d9d9;
+}
+.footerhebville
+{
+    margin-left: 2.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.imghebpopulaires
+{
+    width: 7.938rem;
+    height: 8.375rem;
+}
+.imghebpopulaires img
+{
+    margin-left: 5px;
+    margin-top: 5px;
+    border-radius: 1.25rem 0rem 0rem 1.25rem;
+    width: 7.938rem;
+    height: 100%;
+    object-fit:cover;
+
+}
+.txthebpop
+{
+    position: relative;
+    font-size: 0.9rem;
+    margin-left: 1.563rem;
+    width: auto;
+    max-height: 9rem;
+    margin-right: 1rem;
+}
+.txthebpop p
+{
+    margin-top: -0.5rem;
+}
+.stars
+{
+    position: absolute;
+    bottom: 0rem;
+    margin-bottom: 0.875rem;
+}
+.activitesville
+{
+    border: 2px red solid; /*test*/
+    margin-left: 3.125rem;
+    margin-right: 3.125rem;
+    max-width: 100%;
+    height: 35.625rem; /*test*/
 }
