@@ -381,14 +381,7 @@ h3
     bottom: 0rem;
     margin-bottom: 0.875rem;
 }
-.activitesville
-{
-    border: 2px red solid; /*test*/
-    margin-left: 3.125rem;
-    margin-right: 3.125rem;
-    max-width: 100%;
-    height: 35.625rem; /*test*/
-}
+
 .footer_left
 {
     width:33%;
@@ -397,13 +390,11 @@ h3
 .footer_center
 {
     width:33%;
-
 }
 .footer_right
 {
     width:33%;
     padding-right: 3.125rem;
-
 }
 footer
 {
@@ -411,5 +402,61 @@ footer
     width: 100%;
     background-color: #f2f2f2;
     font-size: 0.9rem;
+}
+.activites
+{
+    margin-bottom: 3.125rem;
+    margin-top: 3.125rem;
+    margin-left: 3.125rem;
+    margin-right: 3.125rem;
+}
+.activites_ville
+{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 27.75rem;
+    box-sizing: border-box;
+}
+.tuile_activite
+{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    overflow: hidden;
+    width: 22%;
+    border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+    box-shadow: 0px 0px 15px #dbdbdb;
+}
+.activite-img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.txt_activite
+{
+    margin-left: 1rem;
+}
+.big-img
+{
+    height: 90%;
+}
+.tuile_activite:nth-of-type(1),
+.tuile_activite:nth-of-type(4) {
+    height: 100%;
+}
 
+.tuile_activite:nth-of-type(2) {
+    height: 55%;
+}
+
+.tuile_activite:nth-of-type(3) {
+    height: 35%;
+}
+
+.tuile_activite:nth-of-type(5),
+.tuile_activite:nth-of-type(6) {
+    height: 45%;
 }
