@@ -418,7 +418,6 @@ footer
 }
 .activites_ville
 {
-    border: 2px green solid;
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
