@@ -12,7 +12,8 @@ html
 #bloc_page
 {
     max-width: 1440px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 header ul
 {
@@ -343,6 +344,8 @@ h3
     margin-left: 2.5rem;
     font-size: 1rem;
     font-weight: bold;
+    margin-right: 2.5rem;
+
 }
 .imghebpopulaires
 {
@@ -385,4 +388,28 @@ h3
     margin-right: 3.125rem;
     max-width: 100%;
     height: 35.625rem; /*test*/
+}
+.footer_left
+{
+    width:33%;
+    padding-left: 3.125rem;
+}
+.footer_center
+{
+    width:33%;
+
+}
+.footer_right
+{
+    width:33%;
+    padding-right: 3.125rem;
+
+}
+footer
+{
+    display: flex;
+    width: 100%;
+    background-color: #f2f2f2;
+    font-size: 0.9rem;
+
 }
