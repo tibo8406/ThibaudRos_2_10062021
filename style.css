@@ -1,556 +1,514 @@
-/* Insertion font raleway*/
-
-@font-face {
-    font-family: 'raleway';
-    src: url('font/Raleway-Regular.ttf');
-    font-weight: normal;
-    font-style: normal;
-    font-family: 'raleway_bold';
-    src: url('font/Raleway-ExtraBold.ttf');
-    font-weight: bold;
-    font-style: normal;
-}
-
-html {
-    font-family: 'raleway', Helvetica, Arial, sans-serif;
-    text-decoration: none;
-}
-
-#bloc_page {
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-/*header ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding-right: 30px;
-}
-
-header ul li {
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-header ul a:hover {
-    border-top: 2px solid #0065fc;
-    color: #0065fc;
-    padding-top: 40px;
-}*/
-
-.navbar {
-    margin-top: -27px;
-    align-items: center;
-    display: grid;
-    grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    margin-left: 3.125rem;
-    margin-right: 3.125rem;
-}
-
-.navbar_link {
-    height: 5rem;
-    text-align: center;
-    line-height: 5rem;
-    border-top: 2px solid transparent;
-}
-
-a {
-    text-decoration: none;
-}
-
-a:visited {
-    color: initial;
-}
-
-.navbar_link:hover {
-    border-top: 2px solid #0065fc;
-    cursor: pointer;
-}
-
-.navbar_link a:hover {
-    color: #0065fc;
-}
-
-#link_hebergement {
-    grid-column-start: 3;
-}
-
-#link_activites {
-    grid-column-start: 4;
-}
-
-#link_sinscrire {
-    grid-column-start: 5;
-    font-weight: bold;
-}
-
-#link_sinscrire a {
-    color: #0065fc;
-}
-
-
-/*a {
-    text-decoration: none;
-    color: black;
-}*/
-
-
-/*.sinscrire a {
-    color: #0065fc;
-    font-weight: bold;
-}*/
-
-
-/*.sinscrire a:hover {
-    border-top: 2px solid #0065fc;
-    padding-top: 40px;
-}*/
-
-
-/*.sinscrire {
-    margin-right: 0%;
-}*/
-
-.recherche {
-    max-width: 100%;
-    margin-top: 1.5rem;
-    box-sizing: border-box;
-    margin-bottom: 1.5rem;
-    margin-right: 3.125rem;
-    margin-left: 3.125rem;
-}
-
-h1 {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-h2 {
-    font-size: 1.40rem;
-}
-
-h3 {
-    font-size: 0.9rem;
-    font-weight: bold;
-}
-
-.mapicon {
-    background-color: #F2F2F2;
-    padding: 1rem 1.25rem;
-    border-radius: 1rem 0 0 1rem;
-    text-align: center;
-}
-
-.champrecherche {
-    border-left: none;
-    border-right: none;
-    font-weight: bold;
-    color: black;
-    border-top: #F2F2F2 1px solid;
-    border-bottom: #F2F2F2 1px solid;
-    font-size: 1rem;
-    font-family: 'raleway', Helvetica, Arial, sans-serif;
-    padding-left: 1.5rem;
-    width: 16rem;
-}
-
-.formrecherche {
-    display: inline-flex;
-    max-width: 100%;
-    overflow: auto;
-    margin-top: 0.5rem;
-}
-
-.buttonrecherche {
-    background-color: #0065fc;
-    color: white;
-    font-family: 'raleway', Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    font-size: 1rem;
-    border: none;
-    border-radius: 0 1rem 1rem 0;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    cursor: pointer;
-    max-width: 100%;
-}
-
-.recherchetitre {
-    margin-bottom: 0.5rem;
-    width: 100%;
-}
-
-.recherchesoustitre {
-    margin-top: 0;
-    width: 100%;
-}
-
-.filtres {
-    height: 3.125rem;
-    display: flex;
-    margin-top: 2rem;
-    padding-left: 0.5rem;
-    align-items: center;
-}
-
-.iconfiltres {
-    position: relative;
-    background-color: #deebff;
-    border-radius: 100%;
-    height: 3.125rem;
-    min-width: 3.125rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #0065fc;
-    margin-left: 2rem;
-}
-
-.textfiltres {
-    padding-left: 2.5rem;
-    padding-right: 1.5rem;
-    font-weight: bold;
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.bulletextfiltres {
-    border: 0.125rem #d9d9d9 solid;
-    border-left: none;
-    margin-left: -1.5rem;
-    border-radius: 0 2rem 2rem 0;
-    box-sizing: border-box;
-    display: table;
-    height: 3.125rem;
-}
-
-.bulletextfiltres:hover {
-    background-color: #f2f7ff;
-    cursor: pointer;
-}
-
-.textfiltres:hover {
-    cursor: pointer;
-}
-
-.iconinforesultat {
-    display: flex;
-    position: relative;
-    font-size: 0.75rem;
-    border-radius: 100%;
-    height: 1.25rem;
-    width: 1.25rem;
-    align-items: center;
-    justify-content: center;
-    color: #0065fc;
-    border: 0.125rem #d9d9d9 solid;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-}
-
-.titrefiltres {
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-.estimationresultat {
-    display: flex;
-    max-width: 100%;
-    margin-top: 1.5rem;
-    min-height: 1.5rem;
-}
-
-.textinforesultat {
-    font-size: 1rem;
-    display: table;
-}
-
-.hebergements {
-    display: flex;
-    margin-right: 3.125rem;
-    margin-left: 3.125rem;
-    justify-content: space-between;
-}
-
-.hebergementsville {
-    border-radius: 1rem 1rem 1rem 1rem;
-    background-color: #f2f2f2;
-    width: 55rem;
-}
-
-.hebergementspopulaires {
-    width: 26.25rem;
-    border-radius: 1rem 1rem 1rem 1rem;
-    background-color: #f2f2f2;
-}
-
-.titreheaderhebergements {
-    display: flex;
-    margin-top: 2.5rem;
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
-    margin-bottom: 1.25rem;
-    max-width: 21.438rem;
-}
-
-.titreheaderhebergementspopulaires {
-    align-items: center;
-    display: flex;
-    margin-left: 2.313rem;
-    margin-right: 2.5rem;
-    margin-top: 2.5rem;
-    justify-content: space-between;
-    max-height: 1.5rem;
-    margin-bottom: 1.563rem;
-}
-
-.iconpopulaires {
-    font-size: 1.125rem;
-    max-height: 1.125rem;
-}
-
-.tuileshebergements {
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: space-between;
-}
-
-.tuilespopulaires {
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
-    flex-wrap: wrap;
-    display: flex;
-}
-
-.infohebergementville {
-    height: 11.875rem;
-    width: 14.75rem;
-    background-color: white;
-    border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
-    margin-bottom: 1.875rem;
-    border: 5px white solid;
-    box-shadow: 0px 0px 15px #dbdbdb;
-}
-
-.infohebergementville:hover {
-    cursor: pointer;
-}
-
-.infohebergementpopulaire {
-    display: inline-flex;
-    height: 9rem;
-    width: 21.375rem;
-    background-color: white;
-    border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
-    margin-bottom: 2.063rem;
-    box-shadow: 0px 0px 15px #dbdbdb;
-}
-
-.infohebergementpopulaire:hover {
-    cursor: pointer;
-}
-
-.imghebville {
-    width: 14.75rem;
-    height: 7.125rem;
-}
-
-.imghebville img {
-    border-radius: 1.25rem 1.25rem 0rem 0rem;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.txthebville {
-    font-size: 0.9rem;
-    margin-left: 0.688rem;
-    margin-right: 0.688rem;
-    margin-top: -0.5rem;
-}
-
-.txthebville p {
-    margin-top: -0.5rem;
-}
-
-.starblue {
-    color: #0065fc;
-}
-
-.stargrey {
-    color: #d9d9d9;
-}
-
-.footerhebville {
-    margin-left: 2.5rem;
-    font-size: 1rem;
-    font-weight: bold;
-    margin-right: 2.5rem;
-}
-
-.imghebpopulaires {
-    width: 7.938rem;
-    height: 8.375rem;
-}
-
-.imghebpopulaires img {
-    margin-left: 5px;
-    margin-top: 5px;
-    border-radius: 1.25rem 0rem 0rem 1.25rem;
-    width: 7.938rem;
-    height: 100%;
-    object-fit: cover;
-}
-
-.txthebpop {
-    position: relative;
-    font-size: 0.9rem;
-    margin-left: 1.563rem;
-    width: auto;
-    max-height: 9rem;
-    margin-right: 1rem;
-}
-
-.txthebpop p {
-    margin-top: -0.5rem;
-}
-
-.stars {
-    position: absolute;
-    bottom: 0rem;
-    margin-bottom: 0.875rem;
-}
-
-.footer_left {
-    width: 33%;
-    padding-left: 3.125rem;
-}
-
-.footer_center {
-    width: 33%;
-}
-
-.footer_right {
-    width: 33%;
-    padding-right: 3.125rem;
-}
-
-footer {
-    display: flex;
-    width: 100%;
-    background-color: #f2f2f2;
-    font-size: 0.9rem;
-    padding-bottom: 2rem;
-}
-
-.activites {
-    margin-bottom: 3.125rem;
-    margin-top: 3.125rem;
-    margin-left: 3.125rem;
-    margin-right: 3.125rem;
-}
-
-.activites_ville {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: space-between;
-    height: 27.75rem;
-}
-
-.tuile_activite {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    overflow: hidden;
-    width: 23%;
-    border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
-    box-shadow: 0px 0px 15px #dbdbdb;
-}
-
-.activite-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.txt_activite {
-    margin-left: 1rem;
-}
-
-.tuile_activite:nth-of-type(1),
-.tuile_activite:nth-of-type(4) {
-    height: 100%;
-}
-
-.tuile_activite:nth-of-type(2),
-.tuile_activite:nth-of-type(6) {
-    height: 55%;
-}
-
-.tuile_activite:nth-of-type(3),
-.tuile_activite:nth-of-type(5) {
-    height: 37%;
-}
-
-
-/* RESPONSIVE MOBILE*/
-
-@media screen and (max-width: 767px) {
-    #bloc_page {
-        margin: 0;
-    }
-    /*.logo {
-        padding-left: 1rem;
-        grid-column-end: 1;
-    }*/
-    .navbar {
-        max-width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        margin-right: 0rem;
-        margin-left: 0rem;
-    }
-    #logo {
-        padding-left: 1rem;
-    }
-    #link_hebergement {
-        grid-column-start: 1;
-        grid-row-start: 2;
-        border-bottom: 2px solid #f2f2f2;
-    }
-    #link_activites {
-        grid-column-start: 2;
-        grid-row-start: 2;
-        border-bottom: 2px solid #f2f2f2;
-    }
-    #link_sinscrire {
-        grid-column-start: 2;
-        grid-row-start: 1;
+    /* Insertion font raleway*/
+    
+    @font-face {
+        font-family: 'raleway';
+        src: url('font/Raleway-Regular.ttf');
+        font-weight: normal;
+        font-style: normal;
+        font-family: 'raleway_bold';
+        src: url('font/Raleway-ExtraBold.ttf');
         font-weight: bold;
-        text-align: right;
-        padding-right: 1rem;
+        font-style: normal;
     }
+    
+    html {
+        font-family: 'raleway', Helvetica, Arial, sans-serif;
+        text-decoration: none;
+    }
+    
+    body {
+        max-width: 1440px;
+        margin: auto;
+    }
+    
+    .navbar {
+        margin-top: -19px;
+        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        margin-left: 3.125rem;
+        margin-right: 3.125rem;
+    }
+    
     .navbar_link {
-        height: 4rem;
+        height: 5rem;
         text-align: center;
-        line-height: 4rem;
+        line-height: 5rem;
+        border-top: 2px solid transparent;
     }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    a:visited {
+        color: initial;
+    }
+    
+    .navbar_link:hover {
+        border-top: 2px solid #0065fc;
+        cursor: pointer;
+    }
+    
+    .navbar_link a:hover {
+        color: #0065fc;
+    }
+    
+    #link_hebergement {
+        grid-column-start: 3;
+    }
+    
+    #link_activites {
+        grid-column-start: 4;
+    }
+    
+    #link_sinscrire {
+        grid-column-start: 5;
+        font-weight: bold;
+    }
+    
+    #link_sinscrire a {
+        color: #0065fc;
+    }
+    
     .recherche {
-        margin: 1rem;
+        max-width: 100%;
+        margin-top: 1.5rem;
+        box-sizing: border-box;
+        margin-bottom: 1.5rem;
+        margin-right: 3.125rem;
+        margin-left: 3.125rem;
     }
-    .filtres {}
-}
-
-
-/*RESPONSIVE TABLETTE*/
-
-@media screen and (min-width: 768px) and (max-width: 1223px) {}
+    
+    h1 {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    
+    h2 {
+        font-size: 1.40rem;
+    }
+    
+    h3 {
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+    
+    .mapicon {
+        background-color: #F2F2F2;
+        padding: 1rem 1.25rem;
+        border-radius: 1rem 0 0 1rem;
+        text-align: center;
+    }
+    
+    .champrecherche {
+        border-left: none;
+        border-right: none;
+        font-weight: bold;
+        color: black;
+        border-top: #F2F2F2 1px solid;
+        border-bottom: #F2F2F2 1px solid;
+        font-size: 1rem;
+        font-family: 'raleway', Helvetica, Arial, sans-serif;
+        padding-left: 1.5rem;
+        width: 16rem;
+    }
+    
+    .formrecherche {
+        display: inline-flex;
+        max-width: 100%;
+        overflow: auto;
+        margin-top: 0.5rem;
+    }
+    
+    .buttonrecherche {
+        background-color: #0065fc;
+        color: white;
+        font-family: 'raleway', Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        font-size: 1rem;
+        border: none;
+        border-radius: 0 1rem 1rem 0;
+        padding: 1rem;
+        cursor: pointer;
+    }
+    
+    #icon-glass {
+        display: none;
+    }
+    
+    .recherchetitre {
+        margin-bottom: 0.5rem;
+        width: 100%;
+    }
+    
+    .recherchesoustitre {
+        margin-top: 0;
+        width: 100%;
+    }
+    
+    .filtres {
+        height: 3.125rem;
+        display: flex;
+        margin-top: 2rem;
+        padding-left: 0.5rem;
+        align-items: center;
+    }
+    
+    .filtres h2 {
+        display: inline;
+    }
+    
+    .filtres ul {
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    
+    .filtres ul li {
+        display: inline;
+        margin-left: 25px;
+        font-weight: bold;
+        border: solid 2px #e2e2e2;
+        padding: 0 20px 0 0;
+        margin-top: 10px;
+        border-radius: 200px;
+    }
+    
+    .filtres ul li:hover {
+        cursor: pointer;
+        background: #f2f7ff;
+    }
+    
+    .icon_filtre {
+        background-color: #deebff;
+        color: #0065fc;
+        padding: 18px;
+        border-radius: 200px;
+        margin-right: 15px;
+    }
+    
+    .iconinforesultat {
+        display: inline-flex;
+        position: relative;
+        font-size: 0.75rem;
+        border-radius: 100%;
+        height: 1.5em;
+        min-width: 1.5em;
+        align-items: center;
+        justify-content: center;
+        color: #0065fc;
+        border: 0.125rem #d9d9d9 solid;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    
+    .estimationresultat {
+        display: inline-flex;
+        max-width: 100%;
+        margin-top: 1.5rem;
+        min-height: 1.5rem;
+    }
+    
+    .textinforesultat {
+        font-size: 1rem;
+        display: inline-flex;
+    }
+    
+    .hebergements {
+        display: flex;
+        margin-right: 3.125rem;
+        margin-left: 3.125rem;
+        justify-content: space-between;
+    }
+    
+    .hebergementsville {
+        border-radius: 1rem 1rem 1rem 1rem;
+        background-color: #f2f2f2;
+        width: 55rem;
+    }
+    
+    .hebergementspopulaires {
+        width: 26.25rem;
+        border-radius: 1rem 1rem 1rem 1rem;
+        background-color: #f2f2f2;
+    }
+    
+    .titreheaderhebergements {
+        display: flex;
+        margin-top: 2.5rem;
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+        margin-bottom: 1.25rem;
+        max-width: 21.438rem;
+    }
+    
+    .titreheaderhebergementspopulaires {
+        align-items: center;
+        display: flex;
+        margin-left: 2.313rem;
+        margin-right: 2.5rem;
+        margin-top: 2.5rem;
+        justify-content: space-between;
+        max-height: 1.5rem;
+        margin-bottom: 1.563rem;
+    }
+    
+    .iconpopulaires {
+        font-size: 1.125rem;
+        max-height: 1.125rem;
+    }
+    
+    .tuileshebergements {
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .tuilespopulaires {
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+        flex-wrap: wrap;
+        display: flex;
+    }
+    
+    .infohebergementville {
+        height: 11.875rem;
+        width: 14.75rem;
+        background-color: white;
+        border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+        margin-bottom: 1.875rem;
+        border: 5px white solid;
+        box-shadow: 0px 0px 15px #dbdbdb;
+    }
+    
+    .infohebergementville:hover {
+        cursor: pointer;
+    }
+    
+    .infohebergementpopulaire {
+        display: inline-flex;
+        height: 9rem;
+        width: 21.375rem;
+        background-color: white;
+        border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+        margin-bottom: 2.063rem;
+        box-shadow: 0px 0px 15px #dbdbdb;
+    }
+    
+    .infohebergementpopulaire:hover {
+        cursor: pointer;
+    }
+    
+    .imghebville {
+        width: 14.75rem;
+        height: 7.125rem;
+    }
+    
+    .imghebville img {
+        border-radius: 1.25rem 1.25rem 0rem 0rem;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .txthebville {
+        font-size: 0.9rem;
+        margin-left: 0.688rem;
+        margin-right: 0.688rem;
+        margin-top: -0.5rem;
+    }
+    
+    .txthebville p {
+        margin-top: -0.5rem;
+    }
+    
+    .starblue {
+        color: #0065fc;
+    }
+    
+    .stargrey {
+        color: #d9d9d9;
+    }
+    
+    .footerhebville {
+        margin-left: 2.5rem;
+        font-size: 1rem;
+        font-weight: bold;
+        margin-right: 2.5rem;
+    }
+    
+    .imghebpopulaires {
+        width: 7.938rem;
+        height: 8.375rem;
+    }
+    
+    .imghebpopulaires img {
+        margin-left: 5px;
+        margin-top: 5px;
+        border-radius: 1.25rem 0rem 0rem 1.25rem;
+        width: 7.938rem;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .txthebpop {
+        position: relative;
+        font-size: 0.9rem;
+        margin-left: 1.563rem;
+        width: auto;
+        max-height: 9rem;
+        margin-right: 1rem;
+    }
+    
+    .txthebpop p {
+        margin-top: -0.5rem;
+    }
+    
+    .stars {
+        position: absolute;
+        bottom: 0rem;
+        margin-bottom: 0.875rem;
+    }
+    
+    .footer_left {
+        width: 33%;
+        padding-left: 3.125rem;
+    }
+    
+    .footer_center {
+        width: 33%;
+    }
+    
+    .footer_right {
+        width: 33%;
+        padding-right: 3.125rem;
+    }
+    
+    footer {
+        display: flex;
+        width: 100%;
+        background-color: #f2f2f2;
+        font-size: 0.9rem;
+        padding-bottom: 2rem;
+    }
+    
+    .activites {
+        margin-bottom: 3.125rem;
+        margin-top: 3.125rem;
+        margin-left: 3.125rem;
+        margin-right: 3.125rem;
+    }
+    
+    .activites_ville {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+        height: 27.75rem;
+    }
+    
+    .tuile_activite {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        overflow: hidden;
+        width: 23%;
+        border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+        box-shadow: 0px 0px 15px #dbdbdb;
+    }
+    
+    .activite-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .txt_activite {
+        margin-left: 1rem;
+    }
+    
+    .tuile_activite:nth-of-type(1),
+    .tuile_activite:nth-of-type(4) {
+        height: 100%;
+    }
+    
+    .tuile_activite:nth-of-type(2),
+    .tuile_activite:nth-of-type(6) {
+        height: 55%;
+    }
+    
+    .tuile_activite:nth-of-type(3),
+    .tuile_activite:nth-of-type(5) {
+        height: 37%;
+    }
+    /* RESPONSIVE MOBILE*/
+    
+    @media screen and (max-width: 767px) {
+        #bloc_page {
+            margin: 0;
+        }
+        .navbar {
+            max-width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            margin-right: 0rem;
+            margin-left: 0rem;
+        }
+        #logo {
+            padding-left: 1rem;
+        }
+        #link_hebergement {
+            grid-column-start: 1;
+            grid-row-start: 2;
+            border-bottom: 2px solid #f2f2f2;
+        }
+        #link_activites {
+            grid-column-start: 2;
+            grid-row-start: 2;
+            border-bottom: 2px solid #f2f2f2;
+        }
+        #link_sinscrire {
+            grid-column-start: 2;
+            grid-row-start: 1;
+            font-weight: bold;
+            text-align: right;
+            padding-right: 1rem;
+        }
+        .navbar_link {
+            height: 4rem;
+            text-align: center;
+            line-height: 4rem;
+        }
+        #buttonrecherche {
+            display: none;
+        }
+        #icon-glass {
+            display: flex;
+            border: none;
+            border-radius: 0 14px 14px 0;
+            background-color: #0065fc;
+            color: white;
+            font-weight: 700;
+            font-size: 16px;
+            padding: 17px;
+            cursor: pointer;
+        }
+        .filtres {
+            display: inline-flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .recherche {
+            margin: 1rem;
+        }
+    }
+    /*RESPONSIVE TABLETTE*/
+    
+    @media screen and (min-width: 768px) and (max-width: 1223px) {}
