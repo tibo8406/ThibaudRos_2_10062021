@@ -76,7 +76,6 @@
         max-width: 100%;
         margin-top: 1.5rem;
         box-sizing: border-box;
-        margin-bottom: 1.5rem;
         margin-right: 3.125rem;
         margin-left: 3.125rem;
     }
@@ -111,8 +110,8 @@
         border-bottom: #F2F2F2 1px solid;
         font-size: 1rem;
         font-family: 'raleway', Helvetica, Arial, sans-serif;
-        padding-left: 1.5rem;
-        width: 16rem;
+        padding-left: 1rem;
+        width: auto;
     }
     
     .formrecherche {
@@ -140,31 +139,43 @@
     
     .recherchetitre {
         margin-bottom: 0.5rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
         width: 100%;
     }
     
     .recherchesoustitre {
+        margin-left: 3rem;
+        margin-right: 3rem;
         margin-top: 0;
         width: 100%;
     }
     
     .filtres {
-        height: 3.125rem;
-        display: flex;
-        margin-top: 2rem;
-        padding-left: 0.5rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        margin-top: 1rem;
+        display: grid;
         align-items: center;
+        grid-template-columns: 5% 95%;
+        grid-template-rows: auto;
     }
     
     .filtres h2 {
-        display: inline;
+        grid-row-start: 1;
+        grid-column-start: 1;
     }
     
     .filtres ul {
-        display: inline-flex;
         flex-direction: row;
         flex-wrap: wrap;
         padding: 0;
+    }
+    
+    .liste_filtres {
+        display: inline-flex;
+        grid-row-start: 1;
+        grid-column-start: 2;
     }
     
     .filtres ul li {
@@ -173,7 +184,6 @@
         font-weight: bold;
         border: solid 2px #e2e2e2;
         padding: 0 20px 0 0;
-        margin-top: 10px;
         border-radius: 200px;
     }
     
@@ -190,31 +200,33 @@
         margin-right: 15px;
     }
     
+    .estimationresultat {
+        display: grid;
+        grid-template-columns: 2% 97%;
+        grid-template-rows: 1fr;
+        max-width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        margin-right: 3rem;
+        margin-left: 3rem;
+    }
+    
     .iconinforesultat {
         display: inline-flex;
         position: relative;
         font-size: 0.75rem;
         border-radius: 100%;
-        height: 1.5em;
-        min-width: 1.5em;
+        min-height: 1.5em;
+        max-width: 1.5em;
         align-items: center;
         justify-content: center;
         color: #0065fc;
         border: 0.125rem #d9d9d9 solid;
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
-    }
-    
-    .estimationresultat {
-        display: inline-flex;
-        max-width: 100%;
-        margin-top: 1.5rem;
-        min-height: 1.5rem;
     }
     
     .textinforesultat {
         font-size: 1rem;
-        display: inline-flex;
+        padding-left: 0.5rem;
     }
     
     .hebergements {
@@ -489,6 +501,21 @@
         #buttonrecherche {
             display: none;
         }
+        .button-research {
+            max-width: 150px;
+        }
+        .recherchetitre {
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        .recherchesoustitre {
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
         #icon-glass {
             display: flex;
             border: none;
@@ -500,10 +527,37 @@
             padding: 17px;
             cursor: pointer;
         }
+        .bouton_filtre {
+            margin-bottom: 1rem;
+        }
+        .filtres h2 {
+            grid-row-start: 1;
+        }
         .filtres {
-            display: inline-flex;
-            flex-direction: row;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        .filtres ul li {
+            margin-left: 0;
+        }
+        .liste_filtres {
+            grid-row-start: 2;
+            grid-column-start: 1;
+        }
+        .estimationresultat {
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            grid-template-columns: 7% 93%;
+        }
+        .iconinforesultat {
+            max-height: 1rem;
         }
         .recherche {
             margin: 1rem;
