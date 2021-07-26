@@ -171,7 +171,6 @@ h3 {
 }
 
 .filtres ul {
-    flex-direction: row;
     flex-wrap: wrap;
     padding: 0;
 }
@@ -550,6 +549,7 @@ footer {
         margin-left: 0;
     }
     .liste_filtres {
+        flex-direction: column;
         grid-row-start: 2;
         grid-column-start: 1;
     }
@@ -576,12 +576,11 @@ footer {
         background: white;
     }
     .tuileshebergements {
-        min-width: 100%;
         margin-right: 1rem;
         margin-left: 1rem;
     }
     .infohebergementville {
-        min-width: 89%;
+        width: 100%;
     }
     .imghebville {
         min-width: 100%;
@@ -590,7 +589,7 @@ footer {
         grid-row-start: 1;
         border-radius: 0%;
         max-height: 620px;
-        width: fit-content;
+        width: auto;
     }
     .titreheaderhebergementspopulaires {
         margin-right: 2rem;
@@ -679,7 +678,7 @@ footer {
 
 /*RESPONSIVE TABLETTE*/
 
-@media screen and (min-width: 768px) and (max-width: 1440px) {
+@media screen and (min-width: 768px) and (max-width: 1399px) {
     .navbar {
         margin-right: 2rem;
         margin-left: 2rem;
@@ -716,6 +715,7 @@ footer {
     .liste_filtres {
         grid-row-start: 2;
         grid-column-start: 1;
+        flex-direction: column;
     }
     .bouton_filtre {
         margin-bottom: 1rem;
