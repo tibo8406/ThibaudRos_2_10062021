@@ -51,14 +51,6 @@
     margin-left: 0;
 }
 
-.tuileshebergements {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto;
-    margin: 0;
-    padding-left: 2.5rem;
-}
-
 .hebergements {
     display: grid;
     grid-template-columns: 100%;
@@ -84,7 +76,9 @@
 }
 
 .infohebergementville {
-    margin-right: 2rem;
+    margin-right: 2.5rem;
+    max-width: 19.5rem;
+    width: 100%;
 }
 
 .footerhebville {
@@ -99,9 +93,11 @@
 }
 
 .tuileshebergements {
+    margin-right: 0;
+    justify-content: space-between;
     display: flex;
-    margin: inherit;
-    padding-left: inherit;
+    margin: 0;
+    padding-left: 2.5rem;
 }
 
 .infohebergementpopulaire {

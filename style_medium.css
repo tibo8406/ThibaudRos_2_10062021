@@ -1,0 +1,124 @@
+.navbar {
+    margin-right: 2rem;
+    margin-left: 2rem;
+    width: 90%;
+    column-gap: 15px;
+}
+
+.recherchetitre {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: fit-content;
+}
+
+.recherchesoustitre {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: fit-content;
+}
+
+.recherche {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: fit-content;
+}
+
+.filtres {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: fit-content;
+    max-width: 89%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+.filtres h2 {
+    grid-row-start: 1;
+}
+
+.liste_filtres {
+    grid-row-start: 2;
+    grid-column-start: 1;
+}
+
+.bouton_filtre {
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+
+.filtres ul li {
+    margin-left: 0;
+}
+
+.hebergements {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    margin: 0;
+}
+
+.hebergementspopulaires {
+    grid-row-start: 1;
+    width: auto;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    max-width: 100%;
+}
+
+.hebergementsville {
+    grid-row-start: 2;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width: auto;
+    max-width: 100%;
+}
+
+.infohebergementville {
+    margin-right: 2.5rem;
+    max-width: 17.5rem;
+    width: 100%;
+}
+
+.footerhebville {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.tuilespopulaires {
+    flex-wrap: nowrap;
+    margin-right: 0;
+    justify-content: space-between;
+}
+
+.tuileshebergements {
+    margin-right: 0;
+    justify-content: space-between;
+    display: flex;
+    margin: 0;
+    padding-left: 2.5rem;
+}
+
+.infohebergementpopulaire {
+    margin-right: 2.5rem;
+    height: 12rem;
+}
+
+.imghebpopulaires {
+    width: 4.5rem;
+    height: 11.375rem;
+}
+
+.imghebpopulaires img {
+    width: 5rem
+}
+
+.txthebpop {
+    max-height: 12rem;
+}
+
+.activites {
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
