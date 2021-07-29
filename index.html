@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css"> 
         <link rel="stylesheet" media="screen and (max-width: 767px)" href="style_small.css" /> <!-- stylesheet pour telephone mobile-->
@@ -9,9 +9,9 @@
         <link rel="stylesheet" media="screen and (min-width: 992px) and (max-width: 1199px)" href="style_large.css" /><!-- stylesheet pour tablette large-->
         <link rel="stylesheet" media="screen and (min-width: 1200px) and (max-width: 1399px)" href="style_xlarge.css" /><!-- stylesheet pour tablette extra large-->
         <script src="https://kit.fontawesome.com/18190013bf.js" crossorigin="anonymous"></script>
-        <title>Reservia - Votre hébergement pour des vacances de rêve</title>
-    </head>
-    <body>
+        <title>Reservia - Votre hébergement pour des vacances de rêve</title>
+    </head>
+    <body>
         <!--DEBUT NAV BAR / HEADER-->
         <header>
             <nav class="navbar">
@@ -27,7 +27,7 @@
                 <div class="navbar_link" id="link_sinscrire">
                     <a href="#">S'inscrire</a>
                 </div>
-            </navv>    
+            </nav>    
         </header>
         <!--FIN NAV BAR / HEADER-->
         <!--DEBUT MOTEUR RECHERCHE-->
@@ -38,7 +38,9 @@
             </div>
             <div class="recherche">
                 <form class="formrecherche" action="#" method="post">
-                    <span class="mapicon"><i class="fas fa-map-marker-alt"></i></span>
+                    <span class="mapicon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </span>
                     <input class="champrecherche" type="search" name="ville" placeholder="Marseille, France"></input>
                     <button class="buttonrecherche" id="buttonrecherche">Rechercher</button>
                     <button class="button-research fas fa-search" id="icon-glass"></button>
@@ -81,7 +83,7 @@
                     <div class="tuileshebergements">
                         <div class="infohebergementville">
                             <div class="imghebville">
-                                <img src="images/hebergements/small/1.jpg"/>
+                                <img src="images/hebergements/small/1.jpg" alt="Hebergement à Marseille"/>
                             </div>
                             <div class="txthebville">
                                 <h3>Auberge de la cannebière</h3>
@@ -101,7 +103,7 @@
                         </div>
                         <div class="infohebergementville">
                             <div class="imghebville">
-                                <img src="images/hebergements/small/2.jpg"/>
+                                <img src="images/hebergements/small/2.jpg" alt="Hebergement à Marseille - Hôtel du port"/>
                         </div>
                             <div class="txthebville">
                                 <h3>Hôtel du port</h3>
@@ -119,7 +121,7 @@
                         </div>
                         <div class="infohebergementville">
                         <div class="imghebville">
-                                <img src="images/hebergements/small/3.jpg"/>
+                                <img src="images/hebergements/small/3.jpg" alt="Hebergement à Marseille - Hôtel Les mouettes"/>
                             </div>
                             <div class="txthebville">
                                 <h3>Hôtel Les mouettes</h3>
@@ -139,7 +141,7 @@
                         </div>
                         <div class="infohebergementville">
                             <div class="imghebville">
-                                <img src="images/hebergements/small/4.jpg"/>
+                                <img src="images/hebergements/small/4.jpg" alt="Hebergement à Marseille - Hôtel de la mer"/>
                             </div>
                             <div class="txthebville">
                                 <h3>Hôtel de la mer</h3>
@@ -160,7 +162,7 @@
                         </div>
                         <div class="infohebergementville">
                             <div class="imghebville">
-                                <img src="images/hebergements/small/5.jpg"/>
+                                <img src="images/hebergements/small/5.jpg" alt="Hebergement à Marseille - Auberge Le Panier"/>
                             </div>
                             <div class="txthebville">
                                 <h3>Auberge Le Panier</h3>
@@ -180,7 +182,7 @@
                         </div>
                         <div class="infohebergementville">
                         <div class="imghebville">
-                                <img src="images/hebergements/small/6.jpg"/>
+                                <img src="images/hebergements/small/6.jpg" alt="Hebergement à Marseille - Hôtel chez Amina"/>
                             </div>
                             <div class="txthebville">
                                 <h3>Hôtel chez Amina</h3>
@@ -213,12 +215,11 @@
                     <div class="tuilespopulaires">
                         <div class="infohebergementpopulaire">
                             <div class="imghebpopulaires">
-                                <img src="images/hebergements/small/7.jpg"/>
+                                <img src="images/hebergements/small/7.jpg" alt="Hebergement à Marseille - Hôtel Le soleil du matin matin"/>
                             </div>
                             <div class="txthebpop">
                                 <h3>Hôtel Le soleil du matin matin</h3>
                                 <p>Nuit à partir de 128<strong>€</strong></p>
-                                <p>
                                     <div class="stars">
                                         <span class="starblue">
                                             <i class="fas fa-star"></i>
@@ -228,51 +229,46 @@
                                             <i class="fas fa-star"></i>
                                         </span>
                                     </div>
-                                </p>
                             </div>
                         </div>
                         <div class="infohebergementpopulaire">
                             <div class="imghebpopulaires">
-                                <img src="images/hebergements/small/8.jpg"/>
+                                <img src="images/hebergements/small/8.jpg" alt="Hebergement à Marseille - Au coeur de l'eau Chambres d'hôtes"/>
                             </div>
                             <div class="txthebpop">
                                 <h3>Au coeur de l'eau Chambres d'hôtes</h3>
                                 <p>Nuit à partir de 71<strong>€</strong></p>
-                                <p>
-                                    <div class="stars">
-                                        <span class="starblue">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                        </span>
-                                        <span class="stargrey">
-                                            <i class="fas fa-star"></i>
-                                        </span>
-                                    </div>
-                                </p>
+                                <div class="stars">
+                                    <span class="starblue">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="stargrey">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                </div>
                             </div>
                         </div>
                         <div class="infohebergementpopulaire">
                             <div class="imghebpopulaires">
-                                <img src="images/hebergements/small/9.jpg"/>
+                                <img src="images/hebergements/small/9.jpg" alt="Hebergement à Marseille - Hotel Tout bleu et Blanc"/>
                             </div>
                             <div class="txthebpop">
                                 <h3>Hotel Tout bleu et Blanc</h3>
                                 <p>Nuit à partir de 68<strong>€</strong></p>
-                                <p>
-                                    <div class="stars">
-                                        <span class="starblue">
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i>
-                                        </span>
-                                        <span class="stargrey">
-                                            <i class="fas fa-star"></i>
-                                        </span>
-                                    </div>
-                                </p>
+                                <div class="stars">
+                                    <span class="starblue">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                    <span class="stargrey">
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -286,37 +282,37 @@
                 </div>
                 <div class="activites_ville">
                     <div class="tuile_activite" id="activite_1">
-                        <img class="activite-img" src="images/activites/small/6.jpg"/>
+                        <img class="activite-img" src="images/activites/small/6.jpg" alt="Activités à Marseille - Vieux Port"/>
                         <div class="txt_activite">
                             <h3>Vieux Port</h3>
                         </div>
                     </div>
                     <div class="tuile_activite" id="activite_2">
-                        <img class="activite-img" src="images/activites/small/5.jpg"/>
+                        <img class="activite-img" src="images/activites/small/5.jpg" alt="Activités à Marseille - Fort de Pomègues"/>
                         <div class="txt_activite">
                             <h3>Fort de Pomègues</h3>
                         </div>
                     </div>
                     <div class="tuile_activite" id="activite_3">
-                        <img class="activite-img" src="images/activites/small/2.jpg"/>
+                        <img class="activite-img" src="images/activites/small/2.jpg" alt="Activités à Marseille - Îles du Frioul"/>
                         <div class="txt_activite">
                             <h3>Îles du Frioul</h3>
                         </div>
                     </div>
                     <div class="tuile_activite" id="activite_4">
-                        <img class="activite-img" src="images/activites/small/3.jpg"/>
+                        <img class="activite-img" src="images/activites/small/3.jpg" alt="Activités à Marseille - Parc National des Calanques"/>
                         <div class="txt_activite">
                             <h3>Parc National des Calanques</h3>
                         </div>
                     </div>
                     <div class="tuile_activite" id="activite_5">
-                        <img class="activite-img" src="images/activites/small/1.jpg"/>
+                        <img class="activite-img" src="images/activites/small/1.jpg" alt="Activités à Marseille - Notre-Dame-de-la-Garde"/>
                         <div class="txt_activite">
                             <h3>Notre-Dame-de-la-Garde</h3>
                         </div>
                     </div>
                     <div class="tuile_activite" id="activite_6">
-                        <img class="activite-img" src="images/activites/small/4.jpg"/>
+                        <img class="activite-img" src="images/activites/small/4.jpg" alt="Activités à Marseille - Parc Longchamp"/>
                         <div class="txt_activite">
                             <h3>Parc Longchamp</h3>
                         </div>
