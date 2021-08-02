@@ -302,6 +302,7 @@ h3 {
 
 .infohebergementville:hover {
     cursor: pointer;
+    box-shadow: 0px 0px 15px #8a8a8a;
 }
 
 .infohebergementpopulaire {
@@ -316,6 +317,7 @@ h3 {
 
 .infohebergementpopulaire:hover {
     cursor: pointer;
+    box-shadow: 0px 0px 15px #8a8a8a;
 }
 
 .imghebville {
@@ -434,6 +436,11 @@ footer {
     width: 23%;
     border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
     box-shadow: 0px 0px 15px #dbdbdb;
+}
+
+.tuile_activite:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 15px #8a8a8a;
 }
 
 .activite-img {
