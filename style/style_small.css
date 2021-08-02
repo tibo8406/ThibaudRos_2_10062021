@@ -22,6 +22,20 @@
     border-bottom: 2px solid #f2f2f2;
 }
 
+.navbar_link {
+    border-top: none;
+}
+
+.navbar_link:hover {
+    border-bottom: 2px solid #0065fc;
+    cursor: pointer;
+    border-top: none;
+}
+
+.navbar_link a:hover {
+    color: #0065fc;
+}
+
 #link_activites {
     grid-column-start: 2;
     grid-row-start: 2;
