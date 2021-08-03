@@ -373,12 +373,6 @@ footer {
     max-width: 26rem;
 }
 
-#hebergement h1,
-{
-    display: flex;
-    justify-content: space-between;
-}
-
 #hebergement .lespluspopulaires .group-item {
     flex-direction: column;
 }
