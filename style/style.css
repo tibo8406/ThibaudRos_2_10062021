@@ -367,7 +367,7 @@ footer {
     position: relative;
 }
 
-#hebergement .LesPlusPopulaires {
+#hebergement .lespluspopulaires {
     order: 2;
     flex: 0 1 35%;
     max-width: 26rem;
@@ -379,7 +379,7 @@ footer {
     justify-content: space-between;
 }
 
-#hebergement .LesPlusPopulaires .group-item {
+#hebergement .lespluspopulaires .group-item {
     flex-direction: column;
 }
 
@@ -387,18 +387,18 @@ footer {
     margin: 0;
 }
 
-#hebergement .LesPlusPopulaires .fondgris .group-item figure {
+#hebergement .lespluspopulaires .fondgris .group-item figure {
     min-width: 16rem;
     width: 100%;
 }
 
-#hebergement .LesPlusPopulaires .group-item figure {
+#hebergement .lespluspopulaires .group-item figure {
     width: auto;
     display: flex;
     flex-direction: row;
 }
 
-#hebergement .LesPlusPopulaires .group-item figure img {
+#hebergement .lespluspopulaires .group-item figure img {
     max-width: 100px;
     max-height: initial;
     height: 115px;
@@ -411,4 +411,11 @@ footer {
 
 #hebergement .fondgris .group-item figure:hover {
     box-shadow: 0px 0px 15px #8a8a8a;
+}
+
+.gras {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
