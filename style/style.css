@@ -374,7 +374,7 @@ footer {
 }
 
 #hebergement h1,
-#hebergement .stonk {
+{
     display: flex;
     justify-content: space-between;
 }
