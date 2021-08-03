@@ -22,20 +22,6 @@
     border-bottom: 2px solid #f2f2f2;
 }
 
-.navbar_link {
-    border-top: none;
-}
-
-.navbar_link:hover {
-    border-bottom: 2px solid #0065fc;
-    cursor: pointer;
-    border-top: none;
-}
-
-.navbar_link a:hover {
-    color: #0065fc;
-}
-
 #link_activites {
     grid-column-start: 2;
     grid-row-start: 2;
@@ -54,6 +40,11 @@
     height: 4rem;
     text-align: center;
     line-height: 4rem;
+    border-top: none;
+}
+
+.navbar_link:hover {
+    border-top: none;
 }
 
 #buttonrecherche {
@@ -130,7 +121,7 @@
     margin: 1rem;
 }
 
-.hebergements {
+.hebergement {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto auto;
@@ -140,52 +131,7 @@
 .hebergementsville {
     grid-row-start: 2;
     max-width: 100%;
-    background: white;
-}
-
-.tuileshebergements {
-    margin-right: 1rem;
-    margin-left: 1rem;
-}
-
-.infohebergementville {
-    width: 100%;
-}
-
-.imghebville {
-    min-width: 100%;
-}
-
-.hebergementspopulaires {
-    grid-row-start: 1;
-    border-radius: 0%;
-    max-height: 620px;
-    width: auto;
-}
-
-.titreheaderhebergementspopulaires {
-    margin-right: 2rem;
-    margin-left: 2rem;
-}
-
-.tuilespopulaires {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    width: auto;
-}
-
-.infohebergementpopulaire {
-    min-width: 100%;
-}
-
-.titreheaderhebergements {
-    margin-right: auto;
-    margin-left: 2rem;
-}
-
-.footerhebville {
-    margin-top: 0;
-    margin-left: 1rem;
+    margin: 0;
 }
 
 .activites {
@@ -199,7 +145,7 @@
 }
 
 .activites_ville {
-    display: grid;
+    display: inline-flex;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     margin-right: auto;
@@ -212,33 +158,12 @@
     width: 100%;
 }
 
-#activite_1 {
-    grid-row-start: 1;
-    height: 190px;
-}
-
-#activite_2 {
-    grid-row-start: 2;
-    height: 190px;
-}
-
-#activite_3 {
-    grid-row-start: 3;
-    height: 190px;
-}
-
-#activite_4 {
-    grid-row-start: 4;
-    height: 190px;
-}
-
-#activite_5 {
-    grid-row-start: 5;
-    height: 190px;
-}
-
+#activite_1,
+#activite_2,
+#activite_3,
+#activite_4,
+#activite_5,
 #activite_6 {
-    grid-row-start: 6;
     height: 190px;
 }
 
@@ -262,4 +187,31 @@ footer {
 .footer_center {
     width: auto;
     margin-left: 1rem;
+}
+
+.container {
+    display: grid;
+    padding: 0;
+    margin: 0;
+}
+
+#hebergement .hebergementsville {
+    margin: 0%;
+}
+
+#hebergement .hebergementsville .fondgris {
+    background: white;
+}
+
+#hebergement .fondgris .group-item {
+    flex-direction: column;
+}
+
+#hebergement .fondgris .group-item figure {
+    width: 100%;
+}
+
+#hebergement .fondgris {
+    border-radius: 0;
+    padding: 0px 25px 0px 15px;
 }
